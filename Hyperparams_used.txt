@@ -1,0 +1,122 @@
+EfficientNetB0
+-------------------------------------------------
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+patience = 5,
+learning_rate = 1e-4,
+
+# Parameters
+self.input_shape = (224, 224, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
+
+InT
+-------------------------------------------------
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+transformer_layers = 6,
+patch_size = 4,
+hidden_size = 64,
+num_heads = 4,
+mlp_dim = 128,
+patience = 5,
+learning_rate = 1e-4,
+
+# Parameters
+self.input_shape = (192, con_win_size, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
+
+Swin-B 
+-------------------------------------------------
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+
+patch_size = (2, 2),  # 2-by-2 sized patches
+dropout_rate = 0.03,  # Dropout rate
+num_heads = 8,  # Attention heads
+embed_dim = 64,  # Embedding dimension
+num_mlp = 256,  # MLP layer size
+qkv_bias = True,  # Convert embedded patches to query, key, and values with a learnable additive value
+window_size = 2,  # Size of attention window
+shift_size = 1,  # Size of shifting window
+image_dimension = 224,  # Initial image size
+weight_decay = 0.0001,
+label_smoothing = 0.1,
+patience = 5,
+learning_rate = 1e-4,
+
+# Parameters
+self.input_shape = (224, 224, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
+
+TabInception
+-------------------------------------------------
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+transformer_layers = 6,
+patch_size = 4,
+hidden_size = 64,
+num_heads = 4,
+mlp_dim = 128,
+patience = 5,
+learning_rate = 1e-4,
+
+# Parameters
+self.input_shape = (192, self.con_win_size, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
+
+VIT orginial
+-------------------------------------------------
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+transformer_layers = 6,
+patch_size = 4,
+hidden_size = 64,
+num_heads = 4,
+mlp_dim = 128,
+patience = 5,
+learning_rate = 1e-4,
+
+
+# Parameters
+self.input_shape = (192, self.con_win_size, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
+
+TABCNN 
+
+batch_size=128, 
+epochs=300,
+con_win_size = 9,
+patience = 5,
+learning_rate = 1e-4,
+
+# Parameters
+self.input_shape = (192, self.con_win_size, 1)
+self.num_classes = 21
+self.num_strings = 6
+
+________________________________________________
